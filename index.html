@@ -3,12 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="chat-up">
+<meta name="description" content="chat up made from tailwind css">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="chat-up">
+<meta property="og:description" content="chat up made from tailwind css">
+<meta property="og:image" content="https://thumbs2.imgbox.com/7f/d2/ZzhZ2abR_t.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://metatags.io/">
+<meta property="twitter:title" content="chat-up">
+<meta property="twitter:description" content="chat up made from tailwind css">
+<meta property="twitter:image" content="https://thumbs2.imgbox.com/7f/d2/ZzhZ2abR_t.jpg">
   <title>chatup</title>
   <link rel="stylesheet" href="./output.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="./assets/image/favicon.png" type="image/x-icon">
 </head>
-
-<body>
+<body class="overflow-hidden">
+  <!-- back-to-top -->
+  <button onclick="scrollBtn()" id="topbtn" class="display-none backtop">top</button>
+    <!-- preloder -->
+    <div id="preloder" class="vh-100 bg-[#1E71FF] flex justify-center items-center pos-fixed w-full">
+      <ul class="ps-0 mb-0">
+        <li class="text-center text-[100px] font-semibold poppins text-white">
+           <img class="w-[50%]" src="./assets/image/favicon.png" alt="">
+        </li>
+      </ul>
+    </div>
   <header class="min-h-screen flex flex-col bg-[#1E71FF]">
     <div class="container">
       <nav class="h-[90px] rela tive justify-between flex items-center">
@@ -18,7 +40,8 @@
           <span class="bg-white h-1 w-10 mb-[7px]"></span>
           <span class="bg-white h-1 w-10"></span>
         </label>
-        <ul class="m-0 p-0 h-full items-center mobile position-absolute  justify-center gap-8 min-[600px]:flex max-[600px]:flex-col">
+        <ul
+          class="m-0 p-0 h-full items-center mobile position-absolute  justify-center gap-8 min-[600px]:flex max-[600px]:flex-col">
           <li><a class="text-white font-normal font-sans text-xs" href="#">Proudct</a></li>
           <li><a class="text-white font-normal font-sans text-xs" href="#">Services</a></li>
           <li><a class="text-white font-normal font-sans text-xs" href="#">Contact</a></li>
@@ -43,7 +66,6 @@
                 a Demo</button>
             </div>
           </div>
-
           <img class="w-full" src="./assets/image/hero-sec-img.png" alt="hero-sec-img">
         </div>
       </div>
@@ -74,17 +96,17 @@
           <p class="text-[#646D78] font-sans text-[21px] font-normal leading-[33.97px] m-0 pt-[20px]">Pricing plans that
             fit like a glove.</p>
           <div class="pt-[60px]">
-            <button
-              class="bg-[#1E71FF] px-[48px] py-[16px] rounded-[60px] text-[#FFF] text-center font-sans font-medium text-[16px] lh-normal">Try
+            <button class="bg-[#1E71FF] px-[48px] py-[16px] rounded-[60px] text-[#FFF] text-center font-sans font-medium text-[16px] lh-normal">Try
               it Free</button>
-            <button
-              class="bg-transparent px-[48px] py-[16px] rounded-[60px] border border-[#1E71FF] ms-5 text-[#1E71FF] text-center font-sans font-medium text-[16px] lh-normal">Get
+            <button class="bg-transparent px-[48px] py-[16px] rounded-[60px] border border-[#1E71FF] ms-5 text-[#1E71FF] text-center font-sans font-medium text-[16px] lh-normal">Get
               a Demo</button>
           </div>
           <div class="h-[1px] max-w-[167px] bg-[#CCD5E2] mt-[80px]"></div>
           <div class="flex pt-[40px]">
             <img src="./assets/image/star-5.svg" alt="star">
-            <p class="m-0 text-[18px] font-normal font-sans leading-[29px] text-[#646D78] max-w-[274px]"><span class="font-bold">5,200 businesses </span> use ChatApp and they rate it as <span class="font-bold">5-stars.</span></p>
+            <p class="m-0 text-[18px] font-normal font-sans leading-[29px] text-[#646D78] max-w-[274px]"><span
+                class="font-bold">5,200 businesses </span> use ChatApp and they rate it as <span
+                class="font-bold">5-stars.</span></p>
           </div>
         </div>
       </div>
@@ -148,5 +170,4 @@
   </footer>
   <script src="./assets/js/app.js"></script>
 </body>
-
 </html>

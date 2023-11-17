@@ -25,6 +25,31 @@
 .overflow_hidden{
     overflow: hidden;
 }
+.display-none{
+    display: none;
+}
+.d-none{
+    display: none;
+}
+.backtop{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.vh-100{
+    min-height: 100vh;
+}
+.pos-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
 @media (max-width:600px) {
     .mobile{
         right: -100%;
